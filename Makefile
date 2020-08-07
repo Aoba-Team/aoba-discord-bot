@@ -1,4 +1,4 @@
-.PHONY: help clean clean-pyc clean-build list test test-all coverage docs release sdist newenv syncenv
+.PHONY: help clean clean-pyc clean-build list test test-all coverage docs release newenv syncenv
 PYTHON ?= python3.8
 
 help:
@@ -10,7 +10,6 @@ help:
 	@echo "coverage - check code coverage quickly with the default Python"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
 	@echo "release - package and upload a release"
-	@echo "sdist - package"
 	@echo "newenv - create a new development environment with venv"
 	@echo "syncenv - synchronize your venv requirements"
 
@@ -49,19 +48,16 @@ docs:
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
 
-release: clean
-	$(PYTHON) setup.py sdist upload
-	$(PYTHON) setup.py bdist_wheel upload
-
-sdist: clean
-	$(PYTHON) setup.py sdist
-	$(PYTHON) setup.py bdist_wheel upload
-	ls -l dist
+release: clean syncenv
+	$(PYTHON) setup.py sdist bdist_wheel
+	$(PYTHON) -m twine upload --repository testpypi dist/* --config-file .pypirc
 
 # Development environment
 newenv:
+	rm -rf .venv
 	$(PYTHON) -m venv --clear .venv
 	.venv/bin/pip install -U pip setuptools
 	$(MAKE) syncenv
+
 syncenv:
 	.venv/bin/pip install -Ur requirements.txt

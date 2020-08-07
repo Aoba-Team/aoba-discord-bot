@@ -18,7 +18,7 @@ doclink = """
 Documentation
 -------------
 
-The full documentation is at http://aobadiscordbot.rtfd.org."""
+The full documentation is at http://aoba-discord-bot.rtfd.org."""
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(

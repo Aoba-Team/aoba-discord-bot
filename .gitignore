@@ -46,3 +46,6 @@ docs/_build
 
 # Virtual environment
 .venv/
+
+#PyPI config
+.pypirc
