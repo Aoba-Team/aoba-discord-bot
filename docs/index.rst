@@ -24,4 +24,4 @@ If you have any suggestions or questions about **Aoba Discord Bot** feel free to
 at douglasc.dev@gmail.com.
 
 If you encounter any errors or problems with **Aoba Discord Bot**, please let me know!
-Open an Issue at the GitHub https://github.com/Aoba-Team/aoba-discord-bot/main repository.
+Open an Issue at the GitHub https://github.com/Aoba-Team/aoba-discord-bot/ repository.
