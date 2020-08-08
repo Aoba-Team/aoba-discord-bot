@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/Aoba-Team/aobadiscordbot/issues.
+Report bugs at https://github.com/Aoba-Team/aoba-discord-bot/issues.
 
 If you are reporting a bug, please include:
 
@@ -43,7 +43,7 @@ articles, and such.
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/Aoba-Team/aobadiscordbot/issues.
+The best way to send feedback is to file an issue at https://github.com/Aoba-Team/aoba-discord-bot/issues.
 
 If you are proposing a feature:
 
@@ -84,7 +84,7 @@ To get tox, just pip install it.
 
 6. Submit a pull request through the GitHub website.
 
-.. _Fork: https://github.com/Aoba-Team/aobadiscordbot/fork
+.. _Fork: https://github.com/Aoba-Team/aoba-discord-bot/fork
 
 Pull Request Guidelines
 -----------------------
