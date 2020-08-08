@@ -10,7 +10,7 @@ addons:
       - "python3-pip"
 
 python:
-  - "3.8.2"
+  - "3.8"
   - "pypy"
 
 # command to install dependencies
